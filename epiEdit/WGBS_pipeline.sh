@@ -40,9 +40,6 @@ python ${methyC} fqconv -1 "${rawDataDir}/${fqs[0]}" -2 "${rawDataDir}/${fqs[1]}
 echo "bwa step"
 bwa mem -p -M "${refLibDir}/${refConvFa}" "${outDir}/${sample}.conv.fq" | samtools view -Sb - > "${outDir}/${sample}.conv.bam"
 
-# echo "sort bam"
-# samtools sort "${outDir}/${sample}.conv.bam" -o "${outDir}/${sample}.conv.sorted.bam"
-
 echo "bconv step"
 python ${methyC} bconv "${outDir}/${sample}.conv.bam" "${outDir}/${sample}.conv.bconv.bam"
 samtools sort "${outDir}/${sample}.conv.bconv.bam" -o "${outDir}/${sample}.conv.bconv.sorted.bam"
