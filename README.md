@@ -3,14 +3,18 @@ This repo has a bundle of gene editing pipelines for nuclease editting, base edi
 
 
 Nuclease Editting
+
 1. Running env setting
+   
    For historical reason, all sigularity container (*.sif) are stored on Target Science WIP (/hpc/grid/wip_drm_targetsciences/users/shangl02/github/ampliseq-baseEdit/singularity), copy the entire folder to your local branch root directory
 
-2. How to run
+3. How to run
+   
 main.sh experimentID fastqDataPath inputFormPath outputDirPath
 
 
 Epigenome Editing
+
 1. Running env setting
    MethylCTools is only compatible with Python2, thus build a python2 conda env and activate it
    For example:
