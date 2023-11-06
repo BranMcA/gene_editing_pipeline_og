@@ -20,9 +20,11 @@ Epigenome Editing
 1. Running env setting
    
    MethylCTools is only compatible with Python2, thus build a python2 conda env and activate it
+   
    For example:
    
     conda create --name py2env python=2.7
+   
     conda activate py2env
 
 3. Running syntax
